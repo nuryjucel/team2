@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ValidationForAccountName_2</fullName>
+    <active>true</active>
+    <errorConditionFormula>ISBLANK(  Account.Name )</errorConditionFormula>
+    <errorDisplayField>AccountId</errorDisplayField>
+    <errorMessage>Account ismi dolu olmalıdır (Account name must be full)</errorMessage>
+</ValidationRule>

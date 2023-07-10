@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Associated_with_a_Lead_or_an_Opp</fullName>
+    <active>true</active>
+    <description>TTC record should be associated with a lead or an opportunity</description>
+    <errorConditionFormula>AND  ( ISBLANK (Lead__c) , ISBLANK (Opportunity__c) )</errorConditionFormula>
+    <errorMessage>TTC record should be associated with a lead or an opportunity</errorMessage>
+</ValidationRule>
